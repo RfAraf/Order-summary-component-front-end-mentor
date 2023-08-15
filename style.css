@@ -1,0 +1,114 @@
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+body {
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--Pale-blue);
+}
+
+.card {
+    width: 450px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 50px auto;
+}
+
+.container {
+    padding: 30px 50px;
+}
+
+.container h2, #order-description, #payment-button, .pricing {
+    margin-bottom: 25px;
+}
+
+.container h2 {
+    color: var(--Dark-blue);
+    text-align: center;   
+    font-weight: 900; 
+}
+
+#order-description {
+    line-height: 25px;
+    text-align: center;
+    color: var(--Desaturated-blue);
+}
+
+button {
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+#payment-button {
+    color: white;
+    background-color: var(--Bright-blue);
+    padding: 15px;
+    box-shadow: 0 20px 30px -8px var(--Desaturated-blue);
+    border-radius: 10px;
+}
+
+#payment-button:hover {
+    /* transform: scale(1.02); 
+    color: var(--Bright-blue);
+    background-color: var(--Pale-blue); */
+    opacity: 0.8;
+}
+
+#cancel-button:hover {   
+    color: var(--Bright-blue);
+    transform: scale(1.02); 
+}
+
+#cancel-button {
+    background: none;
+    color: var(--Desaturated-blue);
+}
+
+.pricing {
+    display: flex;
+    background-color: var(--Very-pale-blue);
+    border-radius: 10px;
+    padding: 25px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pricing a {
+    color: var(--Bright-blue);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.pricing a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.plan-description {
+    margin-right: 75px;
+    line-height: 25px;
+}
+
+.plan-description p {
+    color: var(--Desaturated-blue);
+}
+
+.plan-description strong {
+    color: var(--Dark-blue);
+    font-weight: 700;
+}
